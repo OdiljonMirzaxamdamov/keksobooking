@@ -24,6 +24,13 @@ window.activeMode = (function () {
       noticeForm.classList.remove('notice__form--disabled');
       window.activeMode.removeFieldsetsDisable();
     },
+
+    //функции для смены режима из неактивного в активный
+    turnOnDisableMod: function () {
+      map.classList.add('map--faded');
+      noticeForm.classList.add('notice__form--disabled');
+      // window.activeMode.removeFieldsetsDisable();
+    },
   };
 
 })();

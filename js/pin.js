@@ -32,8 +32,19 @@
         y: moveEvt.clientY,
       };
 
+      // Надо выполнить проверки мышки на mapPinsElement
+      // if (moveEvt.offsetTop < 130) {
+      //   pinHandle.style.top = 130 + 'px';
+      // }
+      // else if (pinHandle.offsetTop > 640) {
+      //   pinHandle.style.top = 640 + 'px';
+      // }
+
+      console.log('moveEvt: ', moveEvt)
+
       pinHandle.style.top = (pinHandle.offsetTop - shift.y) + 'px';
       pinHandle.style.left = (pinHandle.offsetLeft - shift.x) + 'px';
+
 
       if (pinHandle.offsetTop < 130) {
         pinHandle.style.top = 130 + 'px';

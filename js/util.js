@@ -45,5 +45,22 @@ window.util = (function () {
       }
       return maxElement;
     },
+
+
+    //Функция для получения 4 волшебников среди массива которого вытаскиваем из сети в backend.js
+    getRandomSubset: function (array, count) {
+      if (count > array.length) {
+        console.error("Count should not exceed the length of the array");
+        return [];
+      }
+
+      var shuffledArray = array.slice().sort(function () {
+        return 0.5 - Math.random();
+      });
+
+      return shuffledArray.slice(0, count);
+    },
+
+
   };
 })();
