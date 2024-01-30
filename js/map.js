@@ -33,10 +33,11 @@
   var renderHotels = function (hotel) {
     var hotelsElement = hotelsTemplate.cloneNode(true);
 
-    hotelsElement.querySelector('.map__pin-avatar').src = hotel.avatar;
     hotelsElement.querySelector('.map__pin').style = hotel.address;
 
+    hotelsElement.querySelector('.map__pin-avatar').src = hotel.avatar;
     hotelsElement.querySelector('.popup__avatar').src = hotel.avatar;
+
     hotelsElement.querySelector('.popup__title').textContent = hotel.title;
     hotelsElement.querySelector('.popup__text--address').textContent = hotel.address;
     hotelsElement.querySelector('.popup__price').textContent = hotel.price;

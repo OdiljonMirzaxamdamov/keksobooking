@@ -39,14 +39,14 @@
           <option value="any" selected>Любой тип жилья</option>
           <option value="flat">Квартира</option>
           <option value="house">Дом</option>
-          <option value="bungalo">Сарай</option>
+          <option value="bungalow">Сарай</option>
         </select>
 
         <select name="housing-price" id="housing-price" class="map__filter" >
           <option value="any" selected>Любая</option>
-          <option value="middle">10000 - 50000&#x20bd;</option>
-          <option value="low">до 10000&#x20bd;</option>
-          <option value="high">от 50000&#x20bd;</option>
+          <option value="high">от 50 000&#x20bd;</option>
+          <option value="middle">от 10 000 - до 50 000&#x20bd;</option>
+          <option value="low">до 10 000&#x20bd;</option>
         </select>
 
         <select name="housing-rooms" id="housing-rooms" class="map__filter">
@@ -58,8 +58,13 @@
 
         <select name="housing-guests" id="housing-guests" class="map__filter">
           <option value="any" selected>Любое число гостей</option>
-          <option value="1">Один гость</option>
-          <option value="2">Два гостя</option>
+          <option value="1">1 гость</option>
+          <option value="2">2 гостя</option>
+          <option value="3">3 гостя</option>
+          <option value="4">4 гостя</option>
+          <option value="5">5 гостя</option>
+          <option value="6">6 гостя</option>
+          <option value="7">7 гостя</option>
         </select>
 
         <fieldset id="housing-features" class="map__filter-set features">
@@ -263,9 +268,13 @@
 <script src="js/data.js"></script>
 <!--<script src="js/map.js"></script>-->
 <script src="js/pin.js"></script>
-<script src="js/card.js"></script>
 <script src="js/form.js"></script>
 <script src="js/backend.js"></script>
+<script src="js/debounce.js"></script>
+<script src="js/renderHotels.js"></script>
+<script src="js/setup.js"></script>
+<script src="js/card.js"></script>
+<script src="js/filter.js"></script>
 
 </body>
 </html>

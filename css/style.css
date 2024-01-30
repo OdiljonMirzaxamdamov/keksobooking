@@ -426,6 +426,7 @@ textarea:focus {
   background-color: rgba(3, 28, 45, 0.5);
 
   width: 100%;
+  z-index: 1;
 }
 
 .map__filters {
