@@ -612,6 +612,29 @@ textarea:focus {
   width: 140px;
 }
 
+
+.ad-form__photo {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  gap: 10px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: grab;
+  margin-bottom: 10px;
+}
+
+.ad-form__photo img {
+  max-width: 150px;
+  height: auto;
+  width: 100%;
+  display: block;
+
+  border-radius: 5px;
+}
+
+
 .form__element--submit {
   width: 100%;
   padding: 40px 0;
